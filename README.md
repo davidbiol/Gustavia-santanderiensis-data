@@ -6,7 +6,6 @@ The ENM was done in the software [R](https://www.r-project.org/)
 
 ### Climatic data
 Climatic data from each occurrence record is found in [ClimaticData/gustaviasantanderiensis_CD.csv](ClimaticData/gustaviasantanderiensis_CD.csv)
-![ClimaticData/gustaviasantanderiensis_CD.csv](ClimaticData/gustaviasantanderiensis_CD.csv)
 
 ### Correlation plot
 ![Correlation variables](Figures/Correlation_variables.png)

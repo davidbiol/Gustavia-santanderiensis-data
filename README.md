@@ -5,6 +5,6 @@ Supplementary data from the manuscript "Morphological redescription and ecologic
 The ENM was done in the software [R] (https://www.r-project.org/)
 
 Correlation variables
-[Correlation variables](Figures/correlation_plot.png)
+[Correlation variables](Figures/Correlation_variables.png)
 
 

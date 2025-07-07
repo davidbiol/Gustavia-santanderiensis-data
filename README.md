@@ -13,6 +13,15 @@ Climatic data from each occurrence record is found in [ClimaticData/gustaviasant
 ### Phenology
 The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the package MonographaR v.1.3.1 (Reginato, 2016) in the statistical software R (R Core Team, 2024). 
 
+```
+install.packages("monographaR", dependencies=T)
+library(monographaR)
+library(readxl)
+datos_pheno <- read_excel("phenology_data.xlsx")
+phenoHist(as.data.frame(datos_pheno), shrink=0.5, axis.cex=1.2, title.cex=0, 
+          pdf=F, height=15, width=15, flower.col = NULL, flower.border = "magenta", 
+          fruit.col = "green4", fruit.border = "green3")
+```
 
 ---
 ## References

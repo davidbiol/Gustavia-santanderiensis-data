@@ -28,6 +28,7 @@ phenoHist(as.data.frame(datos_pheno), shrink=0.5, axis.cex=1.2, title.cex=0,
 
 
 R Core Team (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+
 Reginato, M. (2016). monographaR: an R package to facilitate the production of plant taxonomic monographs. Brittonia 68(2): 212-216
 
 

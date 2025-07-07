@@ -1,0 +1,61 @@
+setwd("C:/Users/Asus/Desktop/Modelo final Santanderiensis 2")
+library(kuenm)
+occ_joint <- "gustavia_joint.csv"
+occ_tra <- "gustavia_train.csv"
+M_var_dir <- "M_variables"
+batch_cal <- "Candidate_models"
+out_dir <- "Candidate_Models"
+reg_mult <- c(seq(0.1, 1, 0.1), 2:5)
+f_clas <- "no.t.h"
+args <- NULL
+maxent_path <- "C:/Users/Asus/Documents/maxent"
+wait <- FALSE
+run <- TRUE
+kuenm_cal(occ.joint = occ_joint, occ.tra = occ_tra, M.var.dir = M_var_dir,
+batch = batch_cal, out.dir = out_dir, reg.mult = reg_mult,
+f.clas = f_clas, args = args, maxent.path = maxent_path,
+wait = wait, run = run)
+occ_test <- "gustavia_test.csv"
+out_eval <- "Calibration_results"
+threshold <- 5
+rand_percent <- 50
+iterations <- 500
+kept <- FALSE
+selection <- "OR_AICc"
+# Note, some of the variables used here as arguments were already created for the previous function
+cal_eval <- kuenm_ceval(path = out_dir, occ.joint = occ_joint, occ.tra = occ_tra,
+occ.test = occ_test, batch = batch_cal, out.eval = out_eval,
+threshold = threshold, rand.percent = rand_percent,
+iterations = iterations, kept = kept, selection = selection)
+batch_fin <- "Final_models"
+mod_dir <- "Final_Models"
+rep_n <- 10
+rep_type <- "Bootstrap"
+jackknife <- TRUE
+out_format <- "cloglog"
+project <- TRUE
+G_var_dir <- "G_variables"
+ext_type <- "all"
+write_mess <- TRUE
+write_clamp <- TRUE
+wait1 <- FALSE
+run1 <- TRUE
+args <- NULL
+# Again, some of the variables used as arguments were already created for the previous functions
+kuenm_mod(occ.joint = occ_joint, M.var.dir = M_var_dir, out.eval = out_eval,
+batch = batch_fin, rep.n = rep_n, rep.type = rep_type,
+jackknife = jackknife, out.dir = mod_dir, out.format = out_format,
+project = project, G.var.dir = G_var_dir, ext.type = ext_type,
+write.mess = write_mess, write.clamp = write_clamp,
+maxent.path = maxent_path, args = args, wait = wait1, run = run1)
+library(kuenm)
+is_swd <- FALSE
+sets_var <- c("Set_1")
+out_mop <- "MOP_results"
+percent <- 5
+paral <- FALSE # make this true to perform MOP calculations in parallel, recommended
+# only if a powerful computer is used (see function's help)
+# Some of the variables used as arguments were already created for the previous functions
+kuenm_mmop(G.var.dir = G_var_dir, M.var.dir = M_var_dir, is.swd = is_swd,
+sets.var = sets_var, out.mop = out_mop, percent = percent,
+parallel = paral)

@@ -1,2 +1,0 @@
-java -mx889m -cp "/C:/Users/Asus/Documents/maxent/maxent.jar;C:\Users\Asus\Documents\maxent\maxent.jar" density.Explain -l "C:\Users\Asus\Desktop\Modelo final Santanderiensis 2\Final_Models\M_1_F_q_Set_1_EC\Gustavia_santanderiensis_8.lambdas" -c "C:\Users\Asus\Desktop\Modelo final Santanderiensis 2\Final_Models\M_1_F_q_Set_1_EC\Gustavia_santanderiensis_8_Choco.asc" "C:\Users\Asus\Desktop\Modelo final Santanderiensis 2\G_variables\Set_1\Choco"
-@if errorlevel 1 pause

@@ -14,13 +14,23 @@ Climatic data from each occurrence record is found in [ClimaticData/gustaviasant
 The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the package MonographaR v.1.3.1 (Reginato, 2016) in the statistical software R (R Core Team, 2024). 
 
 ```
-install.packages("monographaR", dependencies=T)
-library(monographaR)
-library(readxl)
-datos_pheno <- read_excel("phenology_data.xlsx")
-phenoHist(as.data.frame(datos_pheno), shrink=0.5, axis.cex=1.2, title.cex=0, 
-          pdf=F, height=15, width=15, flower.col = NULL, flower.border = "magenta", 
-          fruit.col = "green4", fruit.border = "green3")
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+windowsFonts(Times=windowsFont("Times New Roman"))
+
+data <- read_excel("data_phe.xlsx")
+str(data)
+data$Month = factor(data$Month, levels= c("Jan", "Feb", "Mar", "Apr", "May",
+                                          "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"))
+data$Phenology = factor(data$Phenology, levels= c("Flower","Fruit"))
+
+ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
+  geom_bar(stat = "identity", position = "stack") +
+  coord_polar(start = 0) +
+  scale_fill_manual(values = c("orchid2", "#8B7355")) +
+  theme_minimal()+ theme(text=element_text(family="Times",size=14))
 ```
 
 ---

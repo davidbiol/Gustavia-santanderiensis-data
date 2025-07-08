@@ -11,7 +11,7 @@ Climatic data from each occurrence record is found in [ClimaticData/gustaviasant
 ![Correlation variables](Figures/Correlation_variables.png)
 
 ### Phenology
-The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the package MonographaR v.1.3.1 (Reginato, 2016) in the statistical software R (R Core Team, 2024). 
+The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the statistical software R (R Core Team, 2024). 
 
 ```
 library(ggplot2)

@@ -39,7 +39,7 @@ ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
 
 Cobos, M. E., Peterson, A. T., Barve, N., & Osorio-Olvera, L. (2019). kuenm: an R package for detailed development of ecological niche models using Maxent. PeerJ, 7, e6281. https://doi.org/10.7717/peerj.6281
 
-Dinerstein, Eric; Olson, David; Joshi, Anup; Vynne, Carly; and Burgess, Neil D., "An Ecoregion-Based Approach To Protecting Half The Terrestrial Realm". (2017). Scopus Export 2015-2019. 7271. https://stars.library.ucf.edu/scopus2015/7271
+Dinerstein, E., Olson, D., Joshi, A., Vynne, C., & Burgess, N. D. (2017). An Ecoregion-Based Approach To Protecting Half The Terrestrial Realm. Scopus Export 2015-2019. 7271. https://stars.library.ucf.edu/scopus2015/7271
 
 Fick, S.E. & R.J. Hijmans, 2017. WorldClim 2: new 1km spatial resolution climate surfaces for global land areas. International Journal of Climatology 37 (12): 4302-4315.
 

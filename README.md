@@ -11,7 +11,7 @@ All analyses were conducted using the software [R](https://www.r-project.org/) (
 ### Climatic data for species occurrences
 Climatic data from each occurrence record is found in [ClimaticData/gustaviasantanderiensis_CD.csv](ClimaticData/gustaviasantanderiensis_CD.csv)
 
-### Phenology
+## Phenology
 The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the statistical software [R](https://www.r-project.org/) (R Core Team, 2024). 
 
 ```

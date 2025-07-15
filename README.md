@@ -4,7 +4,7 @@ Supplementary data for the manuscript titled: "Morphological redescription and e
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer, and the bioclimatic variables were refined through a [correlation analysis](Figures/Correlation_variables.png). 
 
-The ENM was built using the maximum entropy algorithm via the kuenm package (Cobos et al. 2019). The model was generated using a unique set of bioclimatic variables and calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–5 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features).
+The ENM was built using the maximum entropy algorithm via the kuenm package (Cobos et al. 2019). The model was generated using a unique [set of bioclimatic variables](ENM/M_variables/Set_1) and calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–5 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features).
 
 All analysis was done in the software [R](https://www.r-project.org/) 
 

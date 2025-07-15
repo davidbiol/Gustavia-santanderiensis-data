@@ -6,13 +6,13 @@ To construct the Ecological Niche Model (ENM), occurrence records for the specie
 
 The ENM was built using the maximum entropy algorithm via the KUENM package (Cobos et al. 2019). The model was generated using a unique [set](ENM/M_variables/Set_1) of bioclimatic variables and the partitioned ocurrences records, and was calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–5 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features). Details of the MOP analysis can be found in  [MOP_results](ENM/MOP_results).
 
-All analyses were conducted using the software [R](https://www.r-project.org/). 
+All analyses were conducted using the software [R](https://www.r-project.org/) (R Core Team, 2024). 
 
 ### Climatic data for species occurrences
 Climatic data from each occurrence record is found in [ClimaticData/gustaviasantanderiensis_CD.csv](ClimaticData/gustaviasantanderiensis_CD.csv)
 
 ### Phenology
-The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the statistical software R (R Core Team, 2024). 
+The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both, and graphed in the statistical software [R](https://www.r-project.org/) (R Core Team, 2024). 
 
 ```
 library(ggplot2)

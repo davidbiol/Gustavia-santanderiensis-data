@@ -2,13 +2,13 @@
 Supplementary data for the manuscript titled: "Morphological redescription and ecological niche model of <i>Gustavia santanderiensis</i> R. Knuth (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia"
 
 ## Ecological Niche Modeling (ENM)
-To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a [correlation analysis](Figures/Correlation_variables.png). The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Magdalena Valley [M_variables](ENM/M_variables/Set_1). The projection area (M) was constructed using the Northwest Andean montane forests and Chocó-Darién moist forests ecoregions [G_variables](ENM/G_variables/Set_1).
+To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a [correlation analysis](Figures/Correlation_variables.png). The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). The projection area (M) was constructed using the Northwest Andean montane forests and Chocó-Darién moist forests ecoregions [(G_variables)](ENM/G_variables/Set_1).
 
-The ENM was built using the maximum entropy algorithm via the KUENM package (Cobos et al. 2019). The model was generated using a unique [set of bioclimatic variables](ENM/M_variables/Set_1) and the partitioned ocurrences records, and was calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–5 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features).
+The ENM was built using the maximum entropy algorithm via the KUENM package (Cobos et al. 2019). The model was generated using a unique [set of bioclimatic variables](ENM/M_variables/Set_1) and the partitioned ocurrences records, and was calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–5 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features). Details of the MOP analysis can be found in  [MOP_results](ENM/MOP_results).
 
 All analysis was done in the software [R](https://www.r-project.org/) 
 
-### Climatic data
+### Climatic data for species occurrences
 Climatic data from each occurrence record is found in [ClimaticData/gustaviasantanderiensis_CD.csv](ClimaticData/gustaviasantanderiensis_CD.csv)
 
 ### Phenology

@@ -90,7 +90,7 @@ sever.frag <- severe_frag(XY = datos,
 print(sever.frag)
 #55 frac, severe_frag TRUE
 ```
-The number of localities is estimated. With the previous data of radius between subpopulations and the number of localities, the degree of fragmentation is estimated. The result was **severely fragmented**.
+The number of localities is estimated. With the radius between subpopulations previously estimated, and the number of localities known, the degree of fragmentation is estimated. The result was **severely fragmented**.
 
 ### IUCN Criteria assessment
 ```

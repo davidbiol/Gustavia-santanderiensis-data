@@ -67,7 +67,7 @@ sub <- subpop.comp(XY = datos,
 print(sub)
 #4 subpopulations
 ```
-First, the radius is calculated in order to estabilsh the distance between subpopulations. After that, the number of subpopulations are estimated, giving **four subpopulations**
+First, the radius is calculated in order to estabilsh the distance between subpopulations. After that, the number of subpopulations are estimated, giving **four subpopulations**.
 
 ### Fragmentation
 ```

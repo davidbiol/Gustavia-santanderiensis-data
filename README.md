@@ -34,6 +34,30 @@ ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
   theme_minimal()+ theme(text=element_text(family="Times",size=14))
 ```
 
+## Preliminary IUCN Red List assessment
+The preliminary IUCN Red List assessment of the Extent of occurrence (EOO) and area of occupancy (AOO) was estimated based on the geographical data from the specimens, using the ConR v.2.1 R package (Dauby and de Lima 2024). We used the Convex Hull method to compute EOO, setting 2 × 2 km grid cells. This grid was randomly overlaid 100 times to calculate AOO. The IUCN Red List category for the species was assessed following the guidelines of the International Union for Conservation of Nature v.16 (IUCN 2024). 
+The code for this analysis can be found in [IUCN-Assessment/analysis_iucn.R](IUCN-Assessment/analysis_iucn.R)
+
+```
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+windowsFonts(Times=windowsFont("Times New Roman"))
+
+data <- read_excel("data_phe.xlsx")
+str(data)
+data$Month = factor(data$Month, levels= c("Jan", "Feb", "Mar", "Apr", "May",
+                                          "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"))
+data$Phenology = factor(data$Phenology, levels= c("Flower","Fruit"))
+
+ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
+  geom_bar(stat = "identity", position = "stack") +
+  coord_polar(start = 0) +
+  scale_fill_manual(values = c("orchid2", "#8B7355")) +
+  theme_minimal()+ theme(text=element_text(family="Times",size=14))
+```
+
 ---
 ## References
 

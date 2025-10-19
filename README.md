@@ -1,4 +1,8 @@
 # Gustavia-santanderiensis-data
+
+[![Journal](https://img.shields.io/badge/Journal-Plant%20Ecology%20and%20Evolution-blue)](https://plecevo.eu/)
+[![Status](https://img.shields.io/badge/Status-Under%20Review-orange)]()
+
 Supplementary data for the manuscript titled: "Morphological redescription and ecological niche modeling of *Gustavia santanderiensis* R. Knuth (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia"
 
 ## Ecological Niche Modeling (ENM)

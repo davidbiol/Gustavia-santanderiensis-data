@@ -1,7 +1,8 @@
 # Gustavia-santanderiensis-data
 
 [![Journal](https://img.shields.io/badge/Journal-Plant%20Ecology%20and%20Evolution-blue)](https://plecevo.eu/)
-[![Status](https://img.shields.io/badge/Status-Under%20Review-orange)]()
+[![Status](https://img.shields.io/badge/Status-Published-green)]()
+[![DOI](https://img.shields.io/badge/Status-https://doi.org/10.5091/plecevo.165628-purple)](https://doi.org/10.5091/plecevo.165628)
 
 Supplementary data for the manuscript titled: "Morphological redescription and ecological niche modelling of *Gustavia santanderiensis* (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia"
 

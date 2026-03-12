@@ -4,7 +4,7 @@
 [![Status](https://img.shields.io/badge/Status-Published-green)]()
 [![DOI](https://img.shields.io/badge/DOI-https://doi.org/10.5091/plecevo.165628-blue)](https://doi.org/10.5091/plecevo.165628)
 
-Supplementary data for the manuscript titled: "Morphological redescription and ecological niche modelling of *Gustavia santanderiensis* (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia"
+Supplementary data for: Gutiérrez-Duque D, Ángel-Vallejo MC, Coca LF, Sanín D, Medellín-Zabala D (2026) Morphological redescription and ecological niche modelling of <i>Gustavia santanderiensis</i> (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia. Plant Ecology and Evolution 159(1): 154-165. https://doi.org/10.5091/plecevo.165628
 
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a [correlation analysis](Figures/Correlation_variables.png). The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). The projection area was constructed using the Northwest Andean montane forests and Chocó-Darién moist forests ecoregions [(G_variables)](ENM/G_variables/Set_1).

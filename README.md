@@ -1,4 +1,4 @@
-# Gustavia-santanderiensis-data
+# Morphological redescription and ecological niche modelling of <i>Gustavia santanderiensis</i> (Lecythidaceae), with a key for the genus in the Magdalena Valley, Colombia
 
 [![Journal](https://img.shields.io/badge/Journal-Plant%20Ecology%20and%20Evolution-orange)](https://plecevo.eu/)
 [![Status](https://img.shields.io/badge/Status-Published-green)]()
